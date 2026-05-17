@@ -1,10 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -73,11 +71,13 @@
         <div class="main">
           <div class="text">
             <h2 class="mb-3 fs-1">Hello, my name is</h2>
-            <h1 class="mb-3 name">David <span>Chidi-Benson</span></h1>
-            <h3 class="h3 fs-1">I'm <span id="typed-text"></span> Developer</h3>
+            <h1 class="mb-3 name">David</h1>
+            <h3 class="h3 fs-1">I'm <span id="typed-text"></span></h3>
 
             <div class="mylink mt-5">
-              <a href="https://www.facebook.com/share/1BZKv2zzJU/"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.facebook.com/share/1BZKv2zzJU/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
               <a href="mailto:davidchidibenson@gmail.com"
                 ><i class="fas fa-envelope"></i
               ></a>
@@ -93,12 +93,10 @@
               </a>
             </div>
 
-            <a href="./cv/Resumé.pdf" download class="btn"
-              >Download CV</a
-            >
+            <a href="./cv/Resumé.pdf" download class="btn">Download CV</a>
           </div>
           <div class="img mt-5">
-            <img src="ASSETS/first2.jpg" alt="" />
+            <img src="ASSETS/first.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -146,14 +144,17 @@
       <div class="cards-container">
         <div class="project-card" onclick="visitProject('project3')">
           <img
-            src="ASSETS/therapy.jpg"
+            src="ASSETS/m0dy-brain-8701186_1280.jpg"
             alt="Management System"
             class="card-image"
           />
 
           <div class="card-overlay">
             <h3 class="project-title">Therapy</h3>
-            <button class="visit-button" onclick="window.open('#', '_blank')">
+            <button
+              class="visit-button"
+              onclick="window.open('psych-website-two.vercel.app', '_blank')"
+            >
               Visit
             </button>
           </div>
@@ -178,7 +179,9 @@
             <h3 class="project-title">Calculator</h3>
             <button
               class="visit-button"
-              onclick="window.open('https://calcuator-website.vercel.app/', '_blank')"
+              onclick="
+                window.open('https://calcuator-website.vercel.app/', '_blank')
+              "
             >
               Visit
             </button>
@@ -194,26 +197,31 @@
 
         <div class="project-card" onclick="visitProject('project2')">
           <img
-            src="https://plus.unsplash.com/premium_photo-1681487870238-4a2dfddc6bcb?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="ASSETS/aberrantrealities-ai-generated-8588265_1280.jpg"
             alt="Website"
             class="card-image"
           />
 
           <div class="card-overlay">
-            <h3 class="project-title">TO DO List</h3>
+            <h3 class="project-title">Campus Connect</h3>
             <button
               class="visit-button"
-              onclick="window.open('https://to-do-list-s9s9.vercel.app/','_blank')"
+              onclick="
+                window.open(
+                  'https://campus-connect-silk-kappa.vercel.app',
+                  '_blank',
+                )
+              "
             >
               Visit
             </button>
           </div>
 
           <div class="card-info">
-            <div class="project-name">Task Manager</div>
+            <div class="project-name">Campus Manager</div>
             <div class="project-description">
-              Manage your daily tasks easily with this clean and user-friendly
-              to-do list
+              Stay connected with campus life through a simple and intuitive
+              platform.
             </div>
           </div>
         </div>
@@ -311,10 +319,10 @@
           <div class="skill-item">
             <div class="skill-name">
               <span>MySQL</span>
-              <span class="skill-percentage">12%</span>
+              <span class="skill-percentage">22%</span>
             </div>
             <div class="progress-bar">
-              <div class="progress-fill" data-percentage="12"></div>
+              <div class="progress-fill" data-percentage="22"></div>
             </div>
           </div>
 
@@ -354,11 +362,11 @@
 
           <div class="skill-item">
             <div class="skill-name">
-              <span>Project Management</span>
-              <span class="skill-percentage">44%</span>
+              <span>Social Media Management</span>
+              <span class="skill-percentage">90%</span>
             </div>
             <div class="progress-bar">
-              <div class="progress-fill" data-percentage="44"></div>
+              <div class="progress-fill" data-percentage="90"></div>
             </div>
           </div>
 
@@ -423,7 +431,7 @@
     <!-- بعدين: كود التهيئة -->
     <script>
       var typed = new Typed("#typed-text", {
-        strings: ["Front-End", "UI Designer", "React Learner"],
+        strings: ["Front-End Developer", "UI Designer", "Social Media Manager"],
         typeSpeed: 80,
         backSpeed: 50,
         backDelay: 1500,
